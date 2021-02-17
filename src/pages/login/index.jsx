@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
-import { useHistory, Redirect } from 'react-router-dom'
+import React from 'react'
+
+import { Redirect, useHistory } from 'react-router-dom'
 
 import { useUser } from '~/hooks'
 

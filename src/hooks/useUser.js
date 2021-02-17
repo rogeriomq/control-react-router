@@ -1,11 +1,14 @@
 import { useEffect, useCallback } from 'react'
+
 import { useRecoilState } from 'recoil'
-import { userAtom } from '~/store'
+
 import {
   getUser,
   setUser as setLocalStoreUser,
   clearStorage,
 } from '~/services/localStoreServices'
+import { userAtom } from '~/store'
+
 export default () => {
   const [user, setRecoilUser] = useRecoilState(userAtom)
 
